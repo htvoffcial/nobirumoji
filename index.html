@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta name="robots" content="noindex">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <script src="//accaii.com/haruharutv/script.js" async></script><noscript><img src="//accaii.com/haruharutv/script?guid=on"></noscript>
+
+</head>
+
+<p>スパム出てきてちょっとダルそうな文字</p>
+<input type="range" min="0" max="1000" value="0" oninput="a()" style="width:600px;" id="pr">
+<hr>
+<div style="margin:0px;padding:20px;background:#fcfcfc;border-radius:10px;
+width:400px;" id="pe">
+<div style="display:flex;"><div><img src="icon.png" style="border-radius:50%;width:50px;"></div><div style="font-weight:bold;" id="user">
+</div></div>
+<hr>
+こいつ、、伸びるぞ！！
+</div>
+<script>
+a();
+function a(){
+document.getElementById("pe").style.setProperty("margin-top",document.getElementById("pr").value*1.5+"px");
+document.getElementById("pe").style.setProperty("margin-left",document.getElementById("pr").value*1.5+"px");
+var os = "&#xE47;";
+var mp = cp(os, document.getElementById("pr").value); 
+document.getElementById("user").innerHTML="&#xE14;"+mp;
+document.title="&#xE14;"+mp;
+}
+
+
+function cp(str, m1) {
+    let result = "";
+    for (let i = 0; i < m1; i++) {
+        result += str;
+    }
+    return result;
+}
+
+</script>
+</html>
