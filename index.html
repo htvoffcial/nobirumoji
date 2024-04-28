@@ -8,14 +8,16 @@
 </head>
 
 <p>スパム出てきてちょっとダルそうな文字を伸ばせるようにしました</p>
-<input type="range" min="0" max="1000" value="0" oninput="a()" style="width:600px;" id="pr">
+<input type="range" min="0" max="300" value="0" oninput="a()" style="width:300px;height:20px;" id="pr">
 <hr>
 <div style="margin:0px;padding:20px;background:#fcfcfc;border-radius:10px;
-width:400px;" id="pe">
+width:400px;transition: all 1s;" id="pe">
 <div style="display:flex;"><div><img src="icon.png" style="border-radius:50%;width:50px;"></div><div style="font-weight:bold;" id="user">
 </div></div>
 <hr>
 こいつ、、伸びるぞ！！
+<br>
+<small style="float:right;color:gray;">2024/04/25 22:40</small>
 </div>
 <script>
 a();
@@ -24,7 +26,7 @@ document.getElementById("pe").style.setProperty("margin-top",document.getElement
 document.getElementById("pe").style.setProperty("margin-left",document.getElementById("pr").value*1.5+"px");
 var os = "&#xE47;";
 var mp = cp(os, document.getElementById("pr").value); 
-document.getElementById("user").innerHTML="&#xE14;"+mp;
+document.getElementById("user").innerHTML="&#xE14;"+mp+"<br><span class='llike' style='margin-left:3px;font-size:13px;font-weight:normal;'>@#xE47;</span>";
 document.title="&#xE14;"+mp;
 }
 
@@ -38,4 +40,16 @@ function cp(str, m1) {
 }
 
 </script>
+<style>
+.llike:hover{
+text-decoration:underline;
+cursor:pointer;
+}
+</style>
+<details>
+<summary>
+Version
+</summary>
+Ver1.2
+</details>
 </html>
